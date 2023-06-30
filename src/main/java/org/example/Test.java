@@ -13,8 +13,8 @@ public class Test {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        Stream stream = new Stream("Odera");
-        session.save(stream);
+        Stream stream = new Stream("Somroop");   //done deal
+        session.save(stream);                          //comments are reserved
         
         session.getTransaction().commit();
         session.close();
