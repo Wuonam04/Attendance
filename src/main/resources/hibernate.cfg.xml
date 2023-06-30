@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://ls-7ea213e1ec649e7bffec0e6ace75bc1146c6ce1b.c0w9srsv4i3x.eu-central-1.rds.amazonaws.com:3306/dbmaster</property>
+        <property name="hibernate.connection.username">dbmasteruser</property>
+        <property name="hibernate.connection.password">Wuonam04</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+
+        <!-- Print executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <!-- Create/Update/Validate/Create-drop database -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Annotated entity classes <mapping class="com.company.hb_proj.Employee"/> -->
+
+        <mapping resource="Stream.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
