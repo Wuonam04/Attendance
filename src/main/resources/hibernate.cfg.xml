@@ -26,6 +26,6 @@
 
         <!-- Annotated entity classes <mapping class="com.company.hb_proj.Employee"/> -->
 
-        <mapping resource="Stream.hbm.xml" />
+        <mapping class="org.example.Stream2" />
     </session-factory>
 </hibernate-configuration>

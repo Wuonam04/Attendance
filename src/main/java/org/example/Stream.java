@@ -9,7 +9,8 @@ public class Stream implements Serializable {
     //@Entity
 
         public Stream() {
-        }
+
+        };
 
         public Stream(String name) {
             this.name = name;
