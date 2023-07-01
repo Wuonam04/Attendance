@@ -12,9 +12,10 @@ public class Test {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         //Stream stream = new Stream("akama");//done deal
-        Stream2 stream2 = new Stream2("qwert3", "akama23");
-        stream2.setNemis("qwert3");
-        session.save(stream2);                          //comments are reserved
+        //Stream2 stream2 = new Stream2("qwert3", "akama23");
+        //stream2.setNemis("qwert3");
+        Mark mark = new Mark("225RR5",7, "yes");
+        session.save(mark);                          //comments are reserved
         
         session.getTransaction().commit();
         session.close();

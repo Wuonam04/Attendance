@@ -1,6 +1,6 @@
 package org.example;
 
-
+// <mapping class="org.example.Stream2" />
 
 import javax.persistence.*;
 

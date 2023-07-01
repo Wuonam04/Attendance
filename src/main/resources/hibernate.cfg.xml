@@ -26,6 +26,6 @@
 
         <!-- Annotated entity classes <mapping class="com.company.hb_proj.Employee"/> -->
 
-        <mapping class="org.example.Stream2" />
+        <mapping class="org.example.Mark" />
     </session-factory>
 </hibernate-configuration>
