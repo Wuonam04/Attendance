@@ -14,8 +14,11 @@ public class Test {
         //Stream stream = new Stream("akama");//done deal
         //Stream2 stream2 = new Stream2("qwert3", "akama23");
         //stream2.setNemis("qwert3");
-        Mark mark = new Mark("225RR5",7, "yes");
-        session.save(mark);                          //comments are reserved
+        Mark mark = new Mark("225RRU",7, "yes");
+        //session.save(mark);                          //comments are reserved
+        
+        mark.setWEEK_1("yes");
+        session.update(mark);
         
         session.getTransaction().commit();
         session.close();

@@ -30,7 +30,7 @@ public class gui extends JPanel {
         attendancetext = new JTextField (5);
         nemistext = new JTextField (5);
         class1 = new JLabel ("CLASS_ID");
-        Attndeance = new JLabel ("ATTENDANCE");
+        Attndeance = new JLabel ("ATTENDANCE");                                                                                                                                                                                                                   
 
         //adjust size and set layout
         setPreferredSize (new Dimension (752, 425));
@@ -70,7 +70,8 @@ public class gui extends JPanel {
                     Session session = sessionFactory.openSession();
                     session.beginTransaction();
                     Mark mark = new Mark(nemis.toUpperCase(),class1, atte.toUpperCase());
-                    session.save(mark);                          //comments are reserved
+                    mark.setWEEK_1(atte.toUpperCase());
+                    session.update(mark);                          //comments are reserved
 
                     session.getTransaction().commit();
                     session.close();
@@ -82,7 +83,6 @@ public class gui extends JPanel {
 
                 } catch (Exception e1) {
                     StringBuilder out = new StringBuilder();
-
                     out.append(" kindly enter correct values \n");
                     out.append(" \n Or values already entered. \n");
                     display.setText(out.toString());

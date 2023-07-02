@@ -2,6 +2,7 @@ package org.example;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "Attendance")
