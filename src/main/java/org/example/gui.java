@@ -52,7 +52,7 @@ public class gui extends JPanel {
                 StringBuilder dis = new StringBuilder();
                 dis.append("Attendance Marker. \n");
                 dis.append(" \n");
-                dis.append("\n Kindly enter the requirement data \n");
+                dis.append("\n Kindly enter the required data \n");
                 display.setText(dis.toString());
             }
 
@@ -84,7 +84,6 @@ public class gui extends JPanel {
                 } catch (Exception e1) {
                     StringBuilder out = new StringBuilder();
                     out.append(" kindly enter correct values \n");
-                    out.append(" \n Or values already entered. \n");
                     display.setText(out.toString());
                 }
             }

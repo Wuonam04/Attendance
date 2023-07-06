@@ -10,8 +10,8 @@
         <!-- Connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://ls-7ea213e1ec649e7bffec0e6ace75bc1146c6ce1b.c0w9srsv4i3x.eu-central-1.rds.amazonaws.com:3306/dbmaster</property>
-        <property name="hibernate.connection.username">dbmasteruser</property>
-        <property name="hibernate.connection.password">Wuonam04</property>
+        <property name="hibernate.connection.username"></property>
+        <property name="hibernate.connection.password"></property>
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
